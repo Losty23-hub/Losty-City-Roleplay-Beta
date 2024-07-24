@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTA Losty City Roleplay</title>
+    <style>
+        @font-face {
+            font-family: 'Krinkes';
+            src: url('fonts/Krinkes-Regular.woff2') format('woff2'),
+                 url('fonts/Krinkes-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF8C00;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 2em;
+            font-family: 'Krinkes', Arial, sans-serif;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FF8C00;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .banner {
+            display: flex;
+            overflow: hidden;
+            height: 200px;
+            position: relative;
+        }
+        .banner img {
+            width: 100%;
+            flex-shrink: 0;
+            animation: slide 30s linear infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .section h2 {
+            color: #FF8C00;
+            margin-bottom: 20px;
+        }
+        .section p {
+            margin-bottom: 20px;
+        }
+        .section img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+        .card h3 {
+            color: #FF8C00;
+            margin-top: 0;
+        }
+        .card p {
+            margin: 0;
+        }
+        .button {
+            background-color: #FF8C00;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #FF7F00;
+        }
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p, footer a {
+            color: #FF8C00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer .social-icons {
+            margin-top: 10px;
+        }
+        footer .social-icons img {
+            width: 30px;
+            margin: 0 5px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header img {
+                height: 40px;
+            }
+            .banner {
+                height: 150px;
+            }
+            .section {
+                padding: 15px;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .button {
+                padding: 8px 16px;
+            }
+            footer {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+            header img {
+                height: 30px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 5px;
+            }
+            .banner {
+                height: 100px;
+            }
+            .section {
+                padding: 10px;
+            }
+            .button {
+                padding: 6px 12px;
+            }
+            footer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/attachments/1237738118757613628/1256576183492018286/IMG-20240529-WA0054.jpg?ex=66a23ac4&is=66a0e944&hm=588e615cfb4082e36457e495b971c396f96cc56ba4ba6bc101efa800d8be4286&" alt="Logo do MTA Losty City Roleplay">
+        <h1>MTA Losty City Roleplay</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bem-vindo">Bem-vindo</a></li>
+            <li><a href="#nosso-servidor">Nosso Servidor</a></li>
+            <li><a href="#regras">Regras</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="trabalho1.jpg" alt="Trabalho 1">
+        <img src="trabalho2.jpg" alt="Trabalho 2">
+        <img src="trabalho3.jpg" alt="Trabalho 3">
+    </div>
+    <div class="section" id="bem-vindo">
+        <h2>Bem-vindo ao Losty City Roleplay</h2>
+        <p>O MTA Losty City Roleplay é um servidor dedicado a oferecer uma experiência imersiva de Roleplay no MTA:SA...</p>
+    </div>
+    <div class="section" id="nosso-servidor">
+        <h2>Nosso Servidor</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Scripts Exclusivos</h3>
+                <p>Contamos com scripts exclusivos para melhorar sua experiência de jogo.</p>
+            </div>
+            <div class="card">
+                <h3>Comunidade Ativa</h3>
+                <p>Junte-se a uma comunidade ativa e participe de eventos e atividades diárias.</p>
+            </div>
+            <div class="card">
+                <h3>Administração</h3>
+                <p>Nossa equipe de administração está sempre pronta para ajudar e garantir a melhor experiência.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="regras">
+        <h2>Regras de Roleplay</h2>
+        <p>Para garantir uma experiência agradável para todos, temos algumas regras básicas de Roleplay que devem ser seguidas...</p>
+        <a href="https://discord.gg/seuservidor" class="button">Leia mais no nosso Discord</a>
+    </div>
+    <div class="section" id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@lostycityrp.com</p>
+        <a href="https://discord.gg/seuservidor" class="button">Entre no nosso Discord</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 MTA Losty City Roleplay. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
